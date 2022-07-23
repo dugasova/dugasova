@@ -1,0 +1,361 @@
+.motto-address,
+.motto-fb,
+.motto__menu-list {
+  display: none;
+}
+
+.bg-gradient {
+  background-image: url(../img/symbol.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.home-logo {
+  width: 73px;
+  height: 75px;
+}
+
+.motto {
+  margin: 0 -15px;
+}
+
+.motto-header {
+  display: grid;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
+}
+
+.motto-header-top {
+  background-color: rgba(245, 245, 250, 0.2);
+  grid-column: span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.motto-header-top__lang {
+  padding: 0 15px;
+}
+
+.motto-header-top__lang-swich {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  padding: 5px 7px;
+  text-decoration: none;
+  background-color: transparent;
+  border: transparent;
+}
+
+.motto-header-top__lang-swich:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.motto-phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.motto-address {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.motto-logo {
+  display: block;
+}
+
+.motto__menu-btn {
+  background-color: transparent;
+  border: transparent;
+}
+
+.motto-first__section-title {
+  width: 315px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto;
+  padding-top: 129px;
+  padding-bottom: 159px;
+}
+
+.motto-first__section-scrol {
+  text-align: center;
+}
+
+.motto-first__section-scrol:hover circle {
+  stroke: #F0145A;
+}
+
+.motto-first__section-scrol:hover path {
+  fill: #F0145A;
+}
+
+.motto-section__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-top: 60px;
+}
+
+.motto-section__nav::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.motto-section__nav-item {
+  white-space: nowrap;
+  background-color: transparent;
+  border: transparent;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #B3B3BA;
+  cursor: pointer;
+}
+
+.motto-section__nav-item:hover {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.motto-section-about {
+  margin-top: 30px;
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+  padding: 0 30px;
+}
+
+.motto-section__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 34px;
+}
+
+.motto-section__description {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+.motto .is-active {
+  padding: 5px 7px;
+  width: 33px;
+  height: 25px;
+  background: #F0145A;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .motto-address,
+  .motto-fb,
+  .motto__menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bg-gradient {
+    background-image: url(../img/tabSymbol.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  }
+  .motto-header-top {
+    background-color: transparent;
+  }
+  .motto__menu-btn {
+    display: none;
+  }
+  .motto-header {
+    display: grid;
+    grid-template-rows: repeat(3, -webkit-min-content);
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr;
+  }
+  .motto-header-top {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-column: 1 / -1;
+    margin-top: 52px;
+    background-color: ransparent;
+  }
+  .motto-header-top__lang-swich {
+    margin-left: 0;
+  }
+  .motto-address::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 6px;
+    margin-left: 6px;
+    display: inline-block;
+  }
+  .motto-address::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #FFFFFF;
+    margin: 0 3px;
+    border-radius: 50%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 6px;
+    display: inline-block;
+  }
+  .motto-phone {
+    margin-left: 6px;
+  }
+  .motto-phone::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 6px;
+    display: inline-block;
+  }
+  .motto__menu-list {
+    text-decoration: none;
+    list-style: none;
+    padding-inline: 0;
+  }
+  .motto__menu-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  .motto-first__section-title {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .motto-section__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    width: 648px;
+    padding-top: 60px;
+  }
+}
+
+.home-logo {
+  width: 130px;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .motto-header {
+    grid-template-rows: repeat(2, -webkit-min-content);
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 1fr auto;
+  }
+  .motto__box-logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    align-self: center;
+  }
+  .motto-logo {
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .motto-header-top {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+  .motto-header-top__lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .motto-header-top {
+    margin-right: 60px;
+  }
+  .motto-first__section-title {
+    padding-top: 229px;
+    padding-bottom: 259px;
+  }
+  .motto-section {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .motto-section__nav {
+    width: 47%;
+    padding: 40px 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .motto-section__nav::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+  .motto-section-about {
+    width: 53%;
+    padding: 0 60px;
+    border-top: none;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+  }
+  .motto-section__nav-item {
+    margin-bottom: 30px;
+  }
+  .motto-section_-section__nav:last-child {
+    margin-bottom: 0;
+  }
+  .motto-section__title {
+    padding-top: 0;
+  }
+}
+
+/*# sourceMappingURL=motto.css.map */

@@ -1,0 +1,24 @@
+.bg-gradien {
+    border: 0 0 12px 12px;
+    position: relative;
+}
+.bg-gradien::after {
+    content: "";
+    height: 10px;
+    background: #CACADB;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+}
+.bg-gradien::before {
+    content: "";
+    height: 10px;
+    background: #E7E7F2;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+}

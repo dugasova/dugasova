@@ -1,0 +1,245 @@
+.squady {
+    padding-top: 60px;
+ 
+    
+&__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    text-decoration: none;
+}
+&-team__art {
+    padding: 0 15px;
+}
+&__face {
+    width: 100%;
+    height: 500px;
+    display: block;
+    background: url(../img/face.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 12px 12px 0px 0px;
+
+}
+&-wrap {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+&-descript {
+    background-color: #EDEDF7;
+    padding: 30px 30px;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 30px;
+}
+&-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 30px 0;
+
+}
+&-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+    margin-bottom: 10px;
+}
+&-post {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B3B3BA;
+}
+&-item-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+&-item {
+    width: 16px;
+    height: 16px;
+    background: #24A3FF;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+&-item__2,
+&-item__3 {
+    background: #24A3FF;
+    opacity: 0.2
+}
+&-trust {
+    padding-top: 60px;
+}
+&-trust__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 30px;
+ 
+}
+&-trust-wrap {
+    margin: 0 -15px;
+
+    display: flex;
+    flex-direction: column;
+   
+}
+&-trust__client {
+    display: flex;
+    height: 120px;
+    background: #1C4280;
+    justify-content: center;
+    align-items: center;
+   
+}
+&-trust__client img {
+  
+}
+}
+.client--02 {
+    background: #143646;
+}
+.client--03 {
+    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+.client--04 {
+    background: #9E4DC3;
+}
+.client--05 {
+    background: #FD9339;
+}
+.client--06 {
+    background: #E2E2E4;
+}
+.client--07 {
+    background: #C71C36;
+}
+.client--08 {
+    background: #DCF3F9;
+}
+.client--09 {
+    background: #EAEAEA;
+}
+.client--10 {
+    background: #282240;
+}
+.client--11 {
+    background: #1D4568;
+}
+.client--12 {
+    background: #000000;
+}
+
+
+.client--07,
+.client--08,
+.client--09,
+.client--10,
+.client--11,
+.client--12 {
+    display: none;
+} 
+@media screen and (min-width: 768px) {
+    .client--07,
+    .client--08,
+    .client--09,
+    .client--10,
+    .client--11,
+    .client--12 {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .squady {
+        &__face {
+            width: 100%;
+            height: 500px;
+            display: block;
+            object-fit: cover;
+            background: url(../img/face-2.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            border-radius: 12px 12px 0px 0px;
+            margin: 0 -15px;
+        }
+      
+        &-trust-wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+
+        }
+
+    }
+}
+@media screen and (min-width: 992px) {
+    .squady {
+        &-team {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           
+        }
+    &-trust-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+    &-wrap {
+        display: flex;
+        flex-direction: row;
+       justify-content: space-between;
+    }
+    &-team__art {
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+    }
+    &__photo-wrap {
+        width: 40%;
+        align-items: flex-start;
+    }
+    &-descript-wrap {
+        width: 60%;
+        height: 100%;
+        align-items: flex-start;
+    }
+    &-descript {
+        border-radius: 0 12px 12px 0;
+        margin-bottom: 0;
+    }
+    &__face {
+        width: 100%;
+        height: 528px;
+        display: block;
+        object-fit: cover;
+        background: url(../img/face-3.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        border-radius: 12px 0 0 12px;
+    
+     
+        
+    }
+    &-item-list {
+       display: none;
+    }
+}
+}

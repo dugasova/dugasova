@@ -1,0 +1,127 @@
+.services {
+    padding: 30px 30px 50px 30px;
+
+  &-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    margin-right: 3px;
+    text-decoration: none;
+  }
+  &-can {
+    padding-top: 10px;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-top: 10px;
+
+  }
+  &-ecommerce__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #24A3FF;
+    padding-bottom: 15px;
+
+  }
+&-ecommerce__desctipt {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+}
+}
+//   &-ecommerce__link {
+//     background-image: url(../img/ecommerce.svg);
+//     background-repeat: no-repeat;
+//     display: inline-block;
+//     padding: 43px 43px 43px 43px;
+//     background-position: center;
+//     background-color: #FFFFFF;
+//     border: 1px solid #FFFFFF;
+//     border-radius: 24px;
+//     margin-bottom: 30px;
+//     text-align: center;
+.services-ecommerce__link {
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 43px 43px 43px 43px;
+    background-position: center;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+   
+
+}
+
+.link--ecommerce{
+    background-image: url(../img/ecommerce.svg);
+}
+
+.link--support {
+    background-image: url(../img/support.svg);
+
+}
+.link--corparate {
+
+    background-image: url(../img/corporate.svg);
+}
+.link--trust {
+    background-image: url(../img/trust.svg);
+
+}
+.link--protection {
+    background-image: url(../img/protection.svg);
+
+}
+.link--court {
+    background-image: url(../img/court.svg);
+
+}
+@media screen and (min-width: 768px) {
+    .services {
+        &-e {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows:  repeat(2, 1fr);
+            padding: 60px 30px;
+            column-gap: 50px;
+           
+            
+        }
+
+        &-ecommerce {
+             
+        }
+        &-ecommerce__link {
+            
+        }
+        &-ecommerce__title {
+            
+        }
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .services {
+        &-e {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, mim-content);
+            padding: 30px 30px;
+           
+            
+        }
+    }
+}
